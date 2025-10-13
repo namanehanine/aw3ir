@@ -1,0 +1,98 @@
+/* ===========================
+   Style global
+   =========================== */
+body {
+  background-color: #e9ebee;
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+               "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+h1 {
+  color: #0d6efd;
+  font-size: 2em;
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Boutons
+   =========================== */
+.btn-primary {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 6px 12px;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* ===========================
+   Formulaire
+   =========================== */
+form {
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+  margin-top: 20px;
+}
+
+label {
+  width: 150px;
+  display: inline-block;
+}
+
+input {
+  width: 250px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form:invalid input[type="submit"] {
+  background-color: gray;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:invalid + .icon-ok {
+  display: none;
+}
+
+input:valid + .icon-ok {
+  display: inline-block;
+}
+
+.icon-ok {
+  margin-left: 10px;
+}
+
+/* ===========================
+   Images
+   =========================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
