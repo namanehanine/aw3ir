@@ -65,10 +65,32 @@
   box-sizing: border-box;
 }
 
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+
+      .map-container {
+        border-radius: 0.75rem;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .map-container:hover {
+        transform: scale(1.02);
+      }
+    </style>
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
+}
+.back-home-btn {
+  
+  top: 20px;
+  left: 20px; /* <-- ici */
 }
 
 body {

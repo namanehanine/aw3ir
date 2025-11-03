@@ -8,16 +8,16 @@
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css" />
 
-    <style>
-      body {
-        background-color: #f8f9fa;
-      }
-    </style>
   </head>
 
   <body>
     <!-- Conteneur principal -->
-    <div class="container py-5">
+    <div class="container py-5 position-relative">
+      <!-- Bouton retour à l'accueil -->
+      <a href="../index.html" class="btn btn-outline-secondary back-home-btn">
+        ⬅️ Retour à l'accueil
+      </a>
+
       <div class="card shadow-lg border-0 rounded-3">
         <div class="card-body">
           <h1 class="text-center mb-4 text-primary">
@@ -131,9 +131,12 @@
           </div>
           <div class="modal-body text-center"></div>
           <div class="modal-footer">
+            <a href="../index.html" class="btn btn-outline-secondary">
+              🏠 Accueil
+            </a>
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-primary"
               data-bs-dismiss="modal"
             >
               Fermer
