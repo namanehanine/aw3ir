@@ -1,39 +1,152 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TP3 - Formulaire Bootstrap</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TP3</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
 
     <style>
-        body {
-            background-color: #e9ebee;
-            font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-            font-size: 16px;
-            margin: 0 auto;
-            max-width: 800px;
-        }
+      body {
+        background-color: #f8f9fa;
+      }
     </style>
+  </head>
 
-    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-    <!--<link rel="stylesheet" href="style.css">-->
-    <!--<script src="main.js"></script>-->
-</head>
+  <body>
+    <!-- Conteneur principal -->
+    <div class="container py-5">
+      <div class="card shadow-lg border-0 rounded-3">
+        <div class="card-body">
+          <h1 class="text-center mb-4 text-primary">
+            Formulaire d'inscription
+          </h1>
 
-<body>
-    <nav>
-        <a href="..">🏠 Index</a> / TP3
-    </nav>
-    <h1>tp3</h1>
-    <!-- Add your site or application content here -->
-    <p>Hello world! This is HTML5 Boilerplate.</p>
-    <img src="../galilee.png" alt="Logo Galilee" />
-</body>
+          <!-- Formulaire Bootstrap -->
+          <form id="formulaire" class="needs-validation" novalidate>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="nom" class="form-label">Nom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nom"
+                  placeholder="Dupont"
+                  required
+                />
+              </div>
 
+              <div class="col-md-6">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="prenom"
+                  placeholder="Jean"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="birthday" class="form-label">Date de naissance</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="birthday"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label for="adresse" class="form-label">Adresse postale</label>
+                <div class="input-group">
+                  <span class="input-group-text">📍</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="adresse"
+                    placeholder="10 rue de Paris, Lyon"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse mail</label>
+              <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="nom@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="texte" class="form-label">Texte alternatif</label>
+              <textarea
+                class="form-control"
+                id="texte"
+                rows="3"
+                placeholder="Écrivez ici..."
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button id="submit" type="submit" class="btn btn-primary btn-lg">
+                Envoyer
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL Bootstrap -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Résultat</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fermer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- JS Validation -->
+    <script src="js/form-validation.js"></script>
+  </body>
 </html>
