@@ -70,11 +70,6 @@
     scroll-behavior: smooth;
   }
 }
-.back-home-btn {
-  
-  top: 20px;
-  left: 20px; /* <-- ici */
-}
 
 body {
   margin: 0;
