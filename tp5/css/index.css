@@ -1,0 +1,164 @@
+/* === Reset & typographie === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #87CEFA 0%, #e0f7fa 100%);
+  color: #222;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* === Titres === */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0C4A6E;
+  margin-bottom: 0.3rem;
+}
+
+h4 {
+  color: #0369A1;
+  margin-bottom: 1rem;
+}
+
+/* === Formulaire === */
+.input-group .form-control {
+  border-radius: 50px;
+  border: 1px solid #bbb;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group .form-control:focus {
+  border-color: #0EA5E9;
+  box-shadow: 0 0 8px rgba(14, 165, 233, 0.4);
+}
+
+.btn-primary {
+  background: #0EA5E9;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #80d5ff;
+}
+
+/* === Bouton géolocalisation === */
+.btn-outline-secondary {
+  border-radius: 50px;
+  border-color: #0284C7;
+  color: #0284C7;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: rgba(2, 132, 199, 0.1);
+}
+
+/* === Liste des villes === */
+.list-group a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
+  background-color: rgba(255,255,255,0.85);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.list-group a:hover {
+  background-color: #e0f2fe;
+}
+
+.list-group-item button {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0;
+}
+
+/* === Carte météo === */
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.9);
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  background: linear-gradient(90deg, #0284C7, #0EA5E9);
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-body {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-img-top {
+  border-bottom: 1px solid #ddd;
+}
+
+/* === Icônes météo === */
+.wi {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  color: #facc15; /* soleil jaune */
+}
+
+/* === Liste infos météo === */
+.list-group-flush li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* === Alerts === */
+.alert {
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+     body { padding: 2rem; }
+    .list-group a { cursor: pointer; text-decoration: none; color: inherit; }
+    .card { box-shadow: 0 0 1em rgba(0,0,0,0.15); }
+    .wi { font-size: 1.4rem; margin-right: .5rem; }
+}
